@@ -1,0 +1,273 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #8E388E;
+  height: 80px;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  z-index: 10;
+  position: relative;
+}
+
+.navbar_bars {
+  opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar_bars {
+    color: #EAADEA;
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    right: 22px;
+  }
+}
+
+.navbar_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin-left: 28px;
+  font-size: large;
+  text-decoration: none;
+}
+
+.navbar .menu__bars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  text-align: center;
+  margin-right: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .menu__bars {
+    display: none;
+  }
+}
+
+.navbar .menu__bars .menu__bars_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.navbar .menu__bars .menu__bars_menu:hover {
+  color: #EAADEA;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+}
+
+.navbar .menu__bars #btn {
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #EAADEA;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+
+.navbar .menu__bars #btn:hover {
+  color: white;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  height: 90vh;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 80%;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 434px) {
+  .container {
+    font-size: 12px;
+    height: auto;
+  }
+}
+
+.container .leftcont {
+  margin-right: 10px;
+}
+
+.container .leftcont .leftcontp {
+  font-size: 15px;
+  word-spacing: 1px;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 434px) {
+  .container .leftcont .leftcontp {
+    font-size: 12px;
+  }
+}
+
+.container .leftcont .leftconthead {
+  font-size: 30px;
+  color: #8E388E;
+  font-style: italic;
+}
+
+.container .rightcont img {
+  width: 700px;
+  height: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .container .rightcont img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container .rightcont img {
+    width: 500px;
+    height: auto;
+  }
+}
+
+.container #btn {
+  padding: 15px 30px;
+  text-align: center;
+  background-color: #EAADEA;
+  border-radius: 30px;
+  font-weight: bolder;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  width: 30%;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.container #btn:hover {
+  color: white;
+}
+
+.container #btn .signupbutton {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container #btn .signupbutton {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 434px) {
+  .container #btn .signupbutton {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container #btn {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 40%;
+    font-size: 20px;
+    margin-top: 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 434px) {
+  .container #btn {
+    display: block;
+    margin-bottom: 20px;
+    padding: 1% 5%;
+    text-align: center;
+    max-width: 40%;
+    font-size: 15px;
+    margin-top: 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container #btn {
+    padding: 2% 2%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container #btn {
+    padding: 2% 2%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,78 @@
+@import 'color';
+@import 'mediaquerries';
+@mixin feColorMatrix{
+display:flex;
+align-items:center;
+
+}
+.navbar
+{   @include feColorMatrix;
+    background-color:$sgibeet;
+    height:80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem calc((100vw - 1200px) / 2);
+    z-index:10;
+    position: relative;
+    &_bars
+    {
+        
+         opacity:0;
+         @include tablet
+         {
+             color:$plum2;
+             opacity:1;
+             position:absolute;
+             top:22px;
+             right:22px;
+            
+         }
+
+    }
+    &_logo
+    {  
+         @include feColorMatrix;
+        color:$dark;
+        margin-left:28px;
+        font-size:large;
+        text-decoration: none;
+    }
+   & .menu__bars
+   {
+    @include feColorMatrix;    
+   list-style: none;
+   text-align: center;
+   margin-right:24px;
+   @include tablet
+   {
+       display: none;
+   }
+   & .menu__bars_menu
+   {
+       @include feColorMatrix;
+       text-decoration: none;
+       padding: 0 1rem;
+       justify-content: center;
+       color:$dark;
+       &:hover{
+           color:$plum2;
+           transition:all 0.3 ease;
+       }
+   }
+   #btn
+   {
+       padding:10px 20px;
+       text-align:center;
+      background-color:$plum2;
+      border-radius: 30px;
+      font-weight:bolder;
+      &:hover{
+          color:white;
+          
+      }
+
+   }
+   }
+
+}
